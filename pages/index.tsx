@@ -1,7 +1,20 @@
-import type { NextPage } from 'next'
+import Head from 'next/head';
+import { GetServerSideProps } from 'next';
+const HomePage = () => {
+   return (
+      <Head>
+         <meta name="robots" content="noindex, nofollow" />
+      </Head>
+   );
+};
 
-const Home: NextPage = () => {
-  return <div></div>
-}
+export const getServerSideProps: GetServerSideProps = async () => {
+   return {
+      redirect: {
+         destination: `/posts`,
+      },
+      props: {},
+   };
+};
 
-export default Home
+export default HomePage;
