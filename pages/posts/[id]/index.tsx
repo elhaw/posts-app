@@ -7,7 +7,7 @@ import { PostDetailsPage } from '@modules/posts/pages'
 import fetchPostsByTag from '@modules/posts/api/fetchPostsByTag'
 const Index: FC<IPostDetails.IProps> = ({ postDetails, relatedPosts }) => {
   return (
-    <div className="my-14">
+    <div className="sm:my-6 md:my-8 lg:my-14">
       <PostDetailsPage relatedPosts={relatedPosts} postDetails={postDetails} />
     </div>
   )

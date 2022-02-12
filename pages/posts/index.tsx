@@ -13,7 +13,7 @@ const Index = ({ postsData }: { postsData: any }) => {
     setCurrentPage,
   } = useFetchMorePosts(postsData)
   return (
-    <div className="my-14">
+    <div className="sm:my-6 md:my-8 lg:my-14">
       <PostsPage postsData={postsList.data} />
       {!isLastPage &&
         <div className="flex justify-center my-8">

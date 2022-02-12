@@ -5,7 +5,7 @@ import { Posts } from '@modules/posts/components/organisms'
 const Index: FC<IPostDetails.IProps> = ({ postDetails, relatedPosts }) => {
   const { image, text } = postDetails
   return (
-    <div className="grid gap-32  grid-cols-[6fr,2fr]">
+    <div className="grid sm:gap-12 sm:grid-cols-1 md:grid-cols-[5fr,2fr] md:gap-10 lg:grid-cols-[6fr,2fr]">
       <div className="">
         <DetailedPost image={image} text={text} />
       </div>

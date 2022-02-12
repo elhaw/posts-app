@@ -8,7 +8,7 @@ const Posts: FC<IPosts.IProps> = ({ posts }) => {
       {posts.map(({ image, text, publishDate, id }) => {
         return (
           <Link key={id} href={`/posts/${id}`}>
-            <a target="_blank">
+            <a className="w-100" target="_blank">
               <Post
                 image={image}
                 text={text}
