@@ -1,7 +1,6 @@
 import type { ReactElement, ReactNode } from 'react'
 import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'
-import NextSeo, { DefaultSeo } from 'next-seo'
 import { Layout } from '@modules/shared/components/organisms'
 import '../styles/globals.css'
 import Head from 'next/head'
