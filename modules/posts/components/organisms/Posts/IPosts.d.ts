@@ -1,7 +1,8 @@
+import { Post } from '@interfaces/Post'
 declare namespace IPosts {
-    export interface IProps {
-        data: s
-    }
+  export interface IProps {
+    posts: Post[]
+  }
 }
 
-export {IPosts}
+export { IPosts }
