@@ -3,9 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: [
-      'https://img.dummyapi.io',
-      'https://dummyapi.io',
-      'https://randomuser.me',
+      'img.dummyapi.io',
+      'dummyapi.io',
+      'randomuser.me',
+      'img.dummyapi.io',
     ],
   },
 }
