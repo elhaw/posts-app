@@ -1,7 +1,11 @@
-import React from 'react'
+import { Posts } from '@modules/posts/components/organisms'
 
-const index = () => {
-  return <div>index</div>
+const Index = ({ postsData }: { postsData: any }) => {
+  return (
+    <div className="grid grid-cols-4 gap-4">
+      <Posts posts={postsData} />
+    </div>
+  )
 }
 
-export default index
+export default Index
