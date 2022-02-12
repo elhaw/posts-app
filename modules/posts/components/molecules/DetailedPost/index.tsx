@@ -9,16 +9,18 @@ const DetailedPost: FC<IDetailedPost.IProps> = ({ image, text }) => {
           {text}
         </h2>
       </div>
-      <NextImage
-        className="rounded-t-lg"
-        src={image}
-        alt={text}
-        loading="lazy"
-        layout="responsive"
-        objectFit="cover"
-        width="500"
-        height="300"
-      />
+      {image && (
+        <NextImage
+          className="rounded-t-lg"
+          src={image}
+          alt={text}
+          loading="lazy"
+          layout="responsive"
+          objectFit="cover"
+          width="500"
+          height="300"
+        />
+      )}
       <div className="p-5 h-36 flex flex-col justify-between">
         <p className="mb-2 text-normal font-bold tracking-tig  dark:text-black capitalize">
           {text}
