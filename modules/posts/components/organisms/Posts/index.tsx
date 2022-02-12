@@ -4,7 +4,7 @@ import { Post } from '../../molecules'
 import { IPosts } from './IPosts'
 const Posts: FC<IPosts.IProps> = ({ posts }) => {
   return (
-   <>
+    <>
       {posts.map(({ image, text, publishDate, id }) => {
         return (
           <Link key={id} href={`/posts/${id}`}>
@@ -19,7 +19,7 @@ const Posts: FC<IPosts.IProps> = ({ posts }) => {
           </Link>
         )
       })}
-      </>
+    </>
   )
 }
 
