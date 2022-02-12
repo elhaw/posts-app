@@ -2,8 +2,10 @@ import { GetStaticProps } from 'next/types'
 import { PostsPage } from '@modules/posts/pages'
 import { fetchPosts } from '@modules/posts/api'
 import { useFetchMorePosts } from '@modules/posts/hooks'
+import { FC } from 'react'
+import { IPostsPage } from '@interfaces/pages/IPostsPage'
 
-const Index = ({ postsData }: { postsData: any }) => {
+const Index: FC<IPostsPage.IProps> = ({ postsData }) => {
   const {
     postsList,
     isLoading,
@@ -15,7 +17,7 @@ const Index = ({ postsData }: { postsData: any }) => {
   return (
     <div className="sm:my-6 md:my-8 lg:my-14">
       <PostsPage postsData={postsList.data} />
-      {!isLastPage &&
+      {!isLastPage && (
         <div className="flex justify-center my-8">
           <button
             onClick={() => {
@@ -46,7 +48,7 @@ const Index = ({ postsData }: { postsData: any }) => {
             {isLoading ? 'loading...' : 'load more'}
           </button>
         </div>
-      }
+      )}
     </div>
   )
 }

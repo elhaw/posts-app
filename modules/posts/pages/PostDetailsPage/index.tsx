@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
-import { Post, DetailedPost } from '@modules/posts/components/molecules'
-import { IPostDetails } from '@interfaces/pages/IPostDetails'
+import { DetailedPost } from '@modules/posts/components/molecules'
 import { Posts } from '@modules/posts/components/organisms'
+import { IPostDetails } from '@interfaces/pages/IPostDetails'
 const Index: FC<IPostDetails.IProps> = ({ postDetails, relatedPosts }) => {
   const { image, text } = postDetails
   return (

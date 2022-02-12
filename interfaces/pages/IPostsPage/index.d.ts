@@ -1,7 +1,7 @@
-import { IPost } from '@modules/posts/components/molecules/Post/IPost'
+import { PostsServerResponse } from "@interfaces/PostsServerResponse";
 declare namespace IPostsPage {
   export interface IProps {
-    postDetails: IPost
+    postsData: PostsServerResponse
   }
 }
 
